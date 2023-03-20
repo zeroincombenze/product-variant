@@ -47,15 +47,15 @@ msgid "Can Create Product"
 msgstr ""
 
 #. module: product_variant_configurator
-#: code:addons/product_variant_configurator/models/product_category.py:0
-#: code:addons/product_variant_configurator/models/product_template.py:0
+#: code:addons/product_variant_configurator/models/product_category.py:22
+#: code:addons/product_variant_configurator/models/product_template.py:31
 #, python-format
 msgid "Change warning!"
 msgstr ""
 
 #. module: product_variant_configurator
-#: code:addons/product_variant_configurator/models/product_category.py:0
-#: code:addons/product_variant_configurator/models/product_template.py:0
+#: code:addons/product_variant_configurator/models/product_category.py:23
+#: code:addons/product_variant_configurator/models/product_template.py:32
 #, python-format
 msgid "Changing this parameter may cause automatic variants creation"
 msgstr ""
@@ -77,19 +77,13 @@ msgid "Created on"
 msgstr "Creado en"
 
 #. module: product_variant_configurator
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_attribute_value__display_name
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_category__display_name
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator__display_name
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator_attribute__display_name
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_pricelist__display_name
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__display_name
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_template__display_name
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_template_attribute_line__display_name
 msgid "Display Name"
 msgstr ""
 
 #. module: product_variant_configurator
-#: model:ir.model.fields.selection,name:product_variant_configurator.selection__product_template__no_create_variants__yes
+#: selection:product.template,no_create_variants:0
 msgid "Don't create them automatically"
 msgstr ""
 
@@ -99,26 +93,14 @@ msgid "Don't create variants automatically"
 msgstr ""
 
 #. module: product_variant_configurator
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_attribute_value__id
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_category__id
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator__id
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator_attribute__id
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_pricelist__id
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__id
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_template__id
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_template_attribute_line__id
 msgid "ID"
 msgstr "ID"
 
 #. module: product_variant_configurator
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_attribute_value____last_update
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_category____last_update
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator____last_update
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator_attribute____last_update
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_pricelist____last_update
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product____last_update
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_template____last_update
-#: model:ir.model.fields,field_description:product_variant_configurator.field_product_template_attribute_line____last_update
 msgid "Last Modified on"
 msgstr ""
 
@@ -131,6 +113,12 @@ msgstr "Última actualización por"
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator_attribute__write_date
 msgid "Last Updated on"
 msgstr "Última actualización en"
+
+#. module: product_variant_configurator
+#: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator__name
+#: model:ir.model.fields,field_description:product_variant_configurator.field_product_product__name
+msgid "Name"
+msgstr ""
 
 #. module: product_variant_configurator
 #: model:ir.model.fields,field_description:product_variant_configurator.field_product_configurator_attribute__owner_id
@@ -218,7 +206,7 @@ msgid "Product attributes"
 msgstr ""
 
 #. module: product_variant_configurator
-#: code:addons/product_variant_configurator/models/product_configurator.py:0
+#: code:addons/product_variant_configurator/models/product_configurator.py:186
 #, python-format
 msgid "Product not created!"
 msgstr ""
@@ -234,12 +222,12 @@ msgid "Select a template for a variant. Keep empty for a new full product."
 msgstr ""
 
 #. module: product_variant_configurator
-#: model:ir.model.constraint,message:product_variant_configurator.constraint_product_template_attribute_line_product_attribute_uniq
+#: sql_constraint:product.template.attribute.line:0
 msgid "The attribute already exists for this product"
 msgstr ""
 
 #. module: product_variant_configurator
-#: code:addons/product_variant_configurator/models/product_product.py:0
+#: code:addons/product_variant_configurator/models/product_product.py:82
 #, python-format
 msgid "There's another product with the same attributes."
 msgstr ""
@@ -257,7 +245,7 @@ msgid "This is the sum of the extra price of all attributes"
 msgstr ""
 
 #. module: product_variant_configurator
-#: model_terms:ir.ui.view,arch_db:product_variant_configurator.product_variants_view_2
+#: model_terms:ir.ui.view,arch_db:product_variant_configurator.product_variants_view
 msgid "This product already exists."
 msgstr ""
 
@@ -270,7 +258,7 @@ msgid ""
 msgstr ""
 
 #. module: product_variant_configurator
-#: model:ir.model.fields.selection,name:product_variant_configurator.selection__product_template__no_create_variants__no
+#: selection:product.template,no_create_variants:0
 msgid "Use Odoo's default variant management"
 msgstr ""
 
@@ -280,7 +268,7 @@ msgid "Use extended description when having product attributes"
 msgstr ""
 
 #. module: product_variant_configurator
-#: model:ir.model.fields.selection,name:product_variant_configurator.selection__product_template__no_create_variants__empty
+#: selection:product.template,no_create_variants:0
 msgid "Use the category value"
 msgstr ""
 
@@ -301,7 +289,7 @@ msgid "Variant creation"
 msgstr ""
 
 #. module: product_variant_configurator
-#: code:addons/product_variant_configurator/models/product_product.py:0
+#: code:addons/product_variant_configurator/models/product_product.py:108
 #, python-format
 msgid ""
 "You have to fill the following attributes:\n"
