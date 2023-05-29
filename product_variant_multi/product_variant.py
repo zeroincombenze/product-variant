@@ -25,7 +25,7 @@
 ##############################################################################
 
 from openerp.osv import fields, osv, orm
-import openerp.addons.decimal_precision as dp
+import decimal_precision as dp
 # Lib to eval python code with security
 from openerp.tools.safe_eval import safe_eval
 from openerp.tools.translate import _
